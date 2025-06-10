@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f2f5;
+}
+
+/* Encabezado */
+header.header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 20px 40px;
+    color: #fff;
+}
+
+#logo {
+    /* Regla CSS tipo ID */
+    padding: 10px;
+}
+
+#logo img {
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+}
+
+.promo {
+    /* Regla CSS tipo etiqueta */
+    padding: 10px;
+}
+
+.header-promo img {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Navegación */
+nav.nav-principal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #0055a5;
+    padding: 15px 0;
+}
+
+.botones {
+    background: #fff;
+    color: #0055a5;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Efecto hover */
+.botones:hover {
+    background: #90c0ff;
+    color: #000000;
+}
+
+/* Contenido - Regla compuesta */
+section.contenido {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.evento-noticia {
+    background: #f4f8fb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evento-noticia img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.evento-info {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Formulario */
+.formulario-section {
+    background: #f9f9f9;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-css {
+    padding: 8px 12px;
+    border: 1px solid #b0b0b0;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.select-css {
+    padding: 8px 12px;
+    border: 1px solid #0055a5;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+    background: #f4f8fb;
+}
+
+.boton-guardar {
+    background: #0055a5;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-guardar:hover {
+    background: #003366;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 6px;
+}
+.checkbox-group label {
+    font-weight: 400;
+    font-size: 1rem;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuboleta </title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js" defer></script>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header-principal">
+        <div id="logo" class="header-logo">
+            <img src="imagenes/logo.png" alt="Logo UFPO" width="100">
+        </div>
+        <div class="header-promo">
+            <img src="imagenes/promocion.webp" alt="Promoción Evento" width="300">
+        </div>
+    </header>
+
+    <!-- Botones de navegación -->
+    <nav class="nav-principal">
+        <button class="botones">Quienes somos</button>
+        <button class="botones">Iniciar sesión</button>
+        <button class="botones">Regístrate</button>
+        <button class="botones">Mi perfil</button>
+    </nav>
+
+    <!-- Seccion de noticias -->
+    <main>
+        <section class="contenido">
+            <div class="evento-noticia evento">
+                <img src="imagenes/guns and rose.png" alt="Evento Fútbol">
+                <div class="evento-info">
+                    <h2>Guns N’ Roses volverá a escribir su historia en Colombia.</h2>
+                    <p>El 7 de octubre en Bogotá, desde el Vive Claro, y el 11 de octubre en Medellín, en el Estadio Atanasio Girardot. **Tras sus memorables presentaciones en la capital en 1992 y 2022, y su paso por Medellín en 2016, Axl Rose, Slash y Duff McKagan regresan como parte de su gira “Because What You Want & What You Get Are Two Completely Different Things Tour”, consolidando el legado de una de las bandas eternas del rock and roll.</p>
+                </div>
+            </div>
+            <div class="evento-noticia noticia">
+                <img src="imagenes/linkin.jpg" alt="Noticia Deportiva">
+                <div class="evento-info">
+                    <h2>Bogotá ya sabe lo que es un show de Linkin Park.</h2>
+                    <p>Como lo prometieron, la banda liderada por Mike Shinoda y Emily Armstrong regresa y lo hará en un marco todavía más grande para una presentación que terminará de sellar el vínculo entre LP y Colombia. Todos los clásicos que han marcado generaciones y la presentación definitiva de 'From Zero', su celebrado nuevo álbum de estudio.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section class="formulario-section">
+            <h2>Formulario de inscripción</h2>
+            <form id="formulario" class="formulario">
+                <div class="form-group">
+                    <label for="tipoDoc">Tipo de documento:</label>
+                    <select id="tipoDoc" class="select-css">
+                        <option>Seleccione su tipo de documento</option>
+                        <option>Cédula</option>
+                        <option>Tarjeta de identidad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" class="input-css" placeholder="Escribe tu número de documento" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" id="nombre" class="input-css" placeholder="Escribe tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" class="select-css" onchange="verificarSexo()">
+                        <option>Seleccione su genero</option>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </div>
+                <div class="form-group" id="hijos" style="display: none;">
+                    <label for="tieneHijos">¿Ha tenido hijos?</label>
+                    <select id="tieneHijos" class="select-css">
+                        <option>Sí</option>
+                        <option>No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" class="input-css" onchange="calcularEdad()">
+                    <span id="edad"></span>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" class="input-css" placeholder="ejemplo@ufpo.edu.co">
+                </div>
+                <div class="form-group">
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" class="input-css"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Deportes que practicas:</label>
+                    <div class="checkbox-group dos-columnas">
+                        <label><input type="checkbox" name="deportes" value="Fútbol"> Fútbol</label>
+                        <label><input type="checkbox" name="deportes" value="Baloncesto"> Baloncesto</label>
+                        <label><input type="checkbox" name="deportes" value="Voleibol"> Voleibol</label>
+                        <label><input type="checkbox" name="deportes" value="Natación"> Natación</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="boton-guardar">Guardar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p>© Si llegaste hasta aca mi joana solo queria recordarte que te amo mucho cosita linda y que te mereces todo lo bello y lindo de este mundo porque eres una chica increible.</p>
+        <p>© Te amo y te amare por siempre mi linda chica y el amor de mi vida </p>
+        <img src="imagenes/amor.jfif" alt="">
+
+    </footer>
+</body>
+</html>
